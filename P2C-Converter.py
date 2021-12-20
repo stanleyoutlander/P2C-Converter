@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # Read CSV file and collect data for DataFrame
     data = pd.read_csv('import.csv')
     
-    # Apply calculations and return XYZ Cartesian Coordinates for each row
+    # Apply calculations and return XYZ Cartesian Coordinates for each row and write new data to new columns X, Y, Z
     data[['x','y','z']] = data.apply(p2cconvert, axis=1, result_type ='expand')
     
     # Write DataFrame to CSV File
