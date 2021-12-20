@@ -9,7 +9,8 @@ Converts Polar Coordinates into Cartesian Coordinates.
 - Produces export.csv file;
 
 ## Instructions
-Use import.csv that comes with the app to create your own import file, save with the same name and same headers.
+Use import.csv that comes with the app to create your own import file, save with radius, polar, alpha columns.
+Do not use the raw_polar column, as it is there only for specific calculation with image being only visible from a specific view. The excel table provides simple solution to this by switching X and Y coordinates and accounting -12.859 degrees of sheer of the original image.
 Start - Windows Terminal
 > pip install pandas
 > 
